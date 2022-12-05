@@ -1,0 +1,53 @@
+@media (max-width: 740px) {
+  .container {
+    max-width: 100%;
+  }
+  .plan-list-pc {
+    display: none;
+  }
+  .plan-list-mobile {
+    display: block;
+  }
+
+  .wrapper-payment,
+  .wrapper-my-plan {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #payment .payment-method_list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #payment .payment-method_item {
+    margin: 0 0px 8px 0;
+  }
+
+  #my-plan .cell-plan {
+    margin-right: 15px;
+  }
+
+  .cell-bill {
+    border: none;
+  }
+
+  .cell-bill .btn-default {
+    color: #ee312f;
+    background: #24263c;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-red-rounded {
+    min-width: 200px;
+
+  }
+
+  .payment-header {
+    flex-direction: column-reverse;
+  }
+}

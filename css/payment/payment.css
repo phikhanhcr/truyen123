@@ -1,0 +1,244 @@
+#payment,
+#my-plan {
+  width: 100%;
+  background-color: #fff;
+}
+
+.list-currency {
+  display: flex;
+  align-items: center;
+}
+
+.list-currency li {
+  margin-right: 5px;
+  font-size: 13px;
+  padding: 2px 7px;
+  cursor: pointer;
+}
+
+.list-currency li.active {
+  background: #0052cc;
+  border-radius: 100px;
+  padding: 3px 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrapper-payment,
+.wrapper-my-plan {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.wrapper-my-plan {
+  padding: 55px 20px;
+}
+
+#payment .payment-header {
+  margin-bottom: 5px;
+}
+
+#payment .title,
+#my-plan .title {
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.plan-item:first-of-type {
+  border-top: 1px solid #d5d5d5;
+}
+.plan-item {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  border-bottom: 1px solid #d5d5d5;
+  vertical-align: text-top;
+}
+
+.plan-type {
+  font-size: 11px;
+  background: #d5ab30;
+  border-radius: 2px;
+  line-height: 14px;
+  color: #fff;
+  text-align: center;
+  width: 36px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.plan-duration {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.plan-duration .time {
+  font-size: 14px;
+}
+
+.cell-plan {
+  margin-right: 100px;
+}
+
+.cell-detail {
+  flex-grow: 1;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(34, 34, 34);
+  position: relative;
+}
+
+.hot_icon {
+  position: absolute;
+  left: -28px;
+  top: 1px;
+  background: url(/assets/ico_hot.png) no-repeat;
+  width: 23px;
+  height: 30px;
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+.cell-bill {
+  color: #333;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 137px;
+  text-align: center;
+  position: relative;
+}
+
+.sale_price {
+  display: inline-block;
+  font-size: 10px;
+  color: #fff;
+  background: #059eff;
+  border-radius: 80em;
+  padding: 6px;
+  position: absolute;
+  line-height: 1;
+  text-align: center;
+  font-weight: normal;
+  left: -18px;
+  z-index: 5;
+  top: -13px;
+}
+
+.cell-bill span {
+  font-size: 13px;
+  padding: 5 16px;
+}
+
+.plan-item.active .cell-bill {
+  background: #e52e28;
+  border-color: #e52e28;
+  color: #fff;
+}
+
+.plan-item.active {
+  background-color: rgb(255, 237, 237);
+}
+
+.btn-default {
+  min-width: 97px;
+}
+
+.text-red {
+  color: #e52e28;
+}
+
+.ico_coin {
+  font-size: 11px;
+  background: #fff;
+  border-radius: 2px;
+  line-height: 14px;
+  color: #4a6785;
+  font-weight: 700;
+  text-align: center;
+  width: 36px;
+  display: inline-block;
+  vertical-align: text-top;
+  border: 1px solid #a5b3c2;
+}
+
+.plan-description {
+  padding: 15px;
+  border-bottom: 1px solid #d5d5d5;
+  margin: 5px 0;
+  line-height: 16px;
+  font-weight: 300;
+  font-size: 13px;
+  color: rgb(34, 34, 34);
+  opacity: 0.7;
+}
+
+.plan-description li {
+  margin-bottom: 3px;
+}
+
+.payment-method_item {
+  width: 176px;
+  height: 72px;
+  background-color: #eff0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2px;
+  text-align: center;
+  margin: 0 8px 8px 0;
+}
+
+.payment-method_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.payment-method_item.active {
+  border: 1px solid #e52e28;
+  background-color: rgb(255, 237, 237);
+}
+
+.wrapper-my-plan a {
+  background: #24263c;
+  border-radius: 5px;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+.wrapper-my-plan .plan-item {
+  background: #24263c;
+}
+
+.wrapper-my-plan .plan-duration,
+.wrapper-my-plan .cell-detail {
+  color: white;
+}
+
+.payment-method .payment-method_type {
+  font-size: 12px;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0px 0 14px 0;
+  color: #fff;
+  background: #d5ab30;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.btn-red-rounded {
+  color: #fff;
+  background-color: #ee312f;
+  border-color: transparent;
+  border-radius: 30px;
+  font-size: 14px;
+  -webkit-border-radius: 30px;
+  margin-bottom: 100px;
+  min-width:300px;
+}

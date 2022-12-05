@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/css/payment/payment.css">
+  <link rel="stylesheet" href="/css/payment/responsive.css">
+
+  <title>Document</title>
+</head>
+<style>
+  .container {
+    max-width: 1248px !important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Noto Sans SC", "Noto Sans TC", "Noto Sans JP", "Noto Sans KR", Helvetica, Arial,
+      sans-serif;
+    background-color: #eee;
+  }
+
+  ul,
+  p {
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+</style>
+
+<body>
+  <div id="pricing">
+    <div class="container">
+      <div class="row">
+        <div id="payment" class="my-3">
+          <div class="wrapper-payment">
+            <div class="payment-header d-flex justify-content-between align-items-start align-items-lg-center">
+              <h3 class="title">Select a payment plan</h3>
+              <ul class="list-currency mb-2 mb-lg-0">
+                <li class="active">USD</li>
+                <li>VND</li>
+              </ul>
+            </div>
+
+            <ul class="plan-list-pc">
+              <li class="d-flex plan-item">
+                <div class="cell-plan">
+                  <span class="plan-type">VIP</span>
+                  <span class="plan-duration"> 1 <span class="time">Month</span></span>
+                </div>
+                <div class="cell-detail">
+                  UNLIMITED ACCESS, CANCEL ANYTIME<br>Billed <span class="text-red"> GBP 6.50</span> / Every 1 month.
+                </div>
+                <div class="cell-bill">
+                  <span class="btn btn-xs btn-default">
+                    GBP 6.50/
+                    Month
+                  </span>
+                </div>
+              </li>
+              <li class="d-flex plan-item">
+                <div class="cell-plan">
+                  <span class="plan-type">VIP</span>
+                  <span class="plan-duration"> 1 <span class="time">Month</span></span>
+                </div>
+                <div class="cell-detail">
+                  UNLIMITED ACCESS, CANCEL ANYTIME<br>Billed <span class="text-red"> GBP 6.50</span> / Every 1 month.
+                </div>
+                <div class="cell-bill">
+                  <span class="btn btn-xs btn-default">
+                    GBP 6.50/
+                    Month
+                  </span>
+                </div>
+              </li>
+              <li class="d-flex plan-item active">
+                <div class="cell-plan">
+                  <span class="plan-type">VIP</span>
+                  <span class="plan-duration"> 1 <span class="time">Month</span></span>
+                </div>
+                <div class="cell-detail">
+                  <span class="hot_icon">hot</span>
+                  UNLIMITED ACCESS, CANCEL ANYTIME<br>Billed <span class="text-red"> GBP 6.50</span> / Every 1 month.
+                </div>
+                <div class="cell-bill">
+                  <em class="sale_price"><em class="num">30%</em><br>Sale</em>
+                  <span class="btn btn-xs btn-default">
+                    GBP 6.50/
+                    Month
+                  </span>
+                </div>
+              </li>
+              <li class="d-flex plan-item">
+                <div class="cell-plan">
+                  <span class="ico_coin">Coin</span>
+                  <span class="plan-duration"> 1 <span class="time">Month</span></span>
+                </div>
+                <div class="cell-detail">
+                  UNLIMITED ACCESS, CANCEL ANYTIME<br>Billed <span class="text-red"> GBP 6.50</span> / Every 1 month.
+                </div>
+                <div class="cell-bill">
+                  <span class="btn btn-xs btn-default">
+                    GBP
+                  </span>
+                </div>
+              </li>
+
+              <li>
+                <ul class="plan-description">
+                  <li>- Toomics VIP Memberships may be used to read all premium episodes with no limitation.</li>
+                  <li>- By subscribing to Toomics' VIP membership you agree to our Terms of Use and Privacy Policy.</li>
+                  <li>- You also agree that your membership will continue until you choose to cancel it.</li>
+                  <li>- This VIP Membership is only available for the English version and cannot be used to read comics
+                    of
+                    any other languages.</li>
+                  <li>- This membership will automatically be renewed at the same price, and for the same period as the
+                    option you initially signed up for.</li>
+                  <li>- All of the profits made on Toomics are shared with the artists with whom we have direct
+                    contracts
+                    to publish the comic on our platform.</li>
+                  <li>- In other words, by using Toomics, you are thanking the artists and allowing them to continue
+                    making great stories.</li>
+                </ul>
+              </li>
+            </ul>
+
+
+            <ul class="plan-list-mobile"></ul>
+
+
+
+
+            <div class="payment-method">
+              <h3 class="title">
+                Select Payment method
+              </h3>
+              <div>
+                <h3 class="payment-method_type">Coin / VIP</h3>
+                <ul class="payment-method_list">
+                  <li class="payment-method_item active">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                  <li class="payment-method_item">
+                    <a href="#">
+                      <img src="/assets/logo_n_paypal.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="my-plan" class="mb-lg-5 mb-2">
+          <div class="wrapper-my-plan">
+
+            <div>
+              <h3 class="title mb-2">My selected payment plan</h3>
+              <a href="#">
+                <div class="d-flex plan-item active">
+                  <div class="cell-plan">
+                    <span class="plan-duration"> 1 <span class="time">Month</span></span>
+                  </div>
+                  <div class="cell-detail">
+                    UNLIMITED ACCESS, CANCEL ANYTIME<br>Billed <span class="text-red"> GBP 6.50</span> / Every 1 month.
+                  </div>
+                  <div class="cell-bill">
+                    <span class="btn btn-xs btn-default">
+                      <span>GBP</span> 
+                      <span>6.50/Month</span>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center w-100">
+          <button id="charge_btn" type="button" class="btn btn-lg btn-red-rounded">Start VIP
+            Membership</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
