@@ -35,10 +35,15 @@
   padding: 55px 20px;
 }
 
+
+#payment-mobile {
+  display: none;
+}
 #payment .payment-header {
   margin-bottom: 5px;
 }
 
+#payment-mobile .title,
 #payment .title,
 #my-plan .title {
   font-size: 20px;
@@ -183,7 +188,7 @@
 }
 
 .payment-method_item {
-  width: 176px;
+  width: 47%;
   height: 72px;
   background-color: #eff0f3;
   display: flex;
@@ -221,7 +226,7 @@
   color: white;
 }
 
-.payment-method .payment-method_type {
+.payment-method_type {
   font-size: 12px;
   font-weight: normal;
   display: inline-block;

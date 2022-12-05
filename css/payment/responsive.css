@@ -2,26 +2,10 @@
   .container {
     max-width: 100%;
   }
-  .plan-list-pc {
-    display: none;
-  }
-  .plan-list-mobile {
-    display: block;
-  }
 
-  .wrapper-payment,
   .wrapper-my-plan {
     width: 100%;
     padding: 0 15px;
-  }
-
-  #payment .payment-method_list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #payment .payment-method_item {
-    margin: 0 0px 8px 0;
   }
 
   #my-plan .cell-plan {
@@ -32,22 +16,174 @@
     border: none;
   }
 
-  .cell-bill .btn-default {
-    color: #ee312f;
-    background: #24263c;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-  }
-
   .btn-red-rounded {
     min-width: 200px;
-
+    margin-bottom: 40px;
   }
 
-  .payment-header {
-    flex-direction: column-reverse;
+  .wrapper-pc { 
+    display: none;
+  }
+  #payment {
+    display: none;
+  }
+  #payment-mobile {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #payment-mobile .list-currency {
+    background: #fff;
+    display: block;
+    border-radius: 13em;
+    margin: 1em 0;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+  }
+
+  #payment-mobile .list-currency p {
+    font-size: 1.1em;
+    color: #999999;
+    display: inline-block;
+    margin: 0 6px;
+    text-align: center;
+    padding: 3px 7px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  #payment-mobile .list-currency p.active {
+    background: #0052cc;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  #payment-mobile .duration {
+    border-radius: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65px;
+    background-color: #aeb7cb;
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  #payment-mobile .duration span:first-of-type {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  #payment-mobile .duration .time {
+    font-size: 17px;
+  }
+
+  #payment-mobile .duration .type {
+    font-size: 11px;
+    background: #d5ab30;
+    border-radius: 2px;
+    line-height: 14px;
+    color: #fff;
+    text-align: center;
+    width: 36px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: 2px;
+  }
+
+  .payment-plan-item {
+    height: 91px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  #payment-mobile .wrapper-duration {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #payment-mobile .detail {
+    background-color: #fff;
+    display: flex;
+    margin-left: 5px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  #payment-mobile .detail .hot_icon {
+    left: 11px;
+    top: -13px;
+  }
+
+  #payment-mobile .detail .benefit {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  #payment-mobile .detail .price {
+    color: #ee312f;
+    text-align: center;
+
+    border: 1px solid #b8b8b8;
+    font-size: 11px;
+    vertical-align: middle;
+    margin-right: 32px;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 5px 10px;
+    position: relative;
+  }
+
+  #payment-mobile .detail .price .sale_price {
+    position: absolute;
+  }
+  #payment-mobile .active .duration {
+    background: #ee312f;
+  }
+
+  #payment-mobile .active .detail {
+    border: 1px solid #ee312f;
+  }
+
+  .payment-method_list .payment-method_item {
+    background-color: #fff;
+  }
+
+  .cell-detail {
+    font-size: 11.7px;
+  }
+  .cell-bill {
+    width: 85px;
+  }
+  .cell-bill span {
+    border: none;
+    background: #24263c;
+    color: #ee312f;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .cell-bill .btn {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .cell-plan {
+    text-align: center;
+  }
+  
+  .cell-plan  .plan-duration {
+    margin-left: 0;
+
   }
 }
