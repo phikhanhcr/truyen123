@@ -1,0 +1,150 @@
+@media (max-width: 767px) {
+  .wrapper-banner {
+    /* min-height: 159px;
+     */
+    width: 500px;
+  }
+
+  #banner-pc,
+  #main_content-pc,
+  .section_recommended_wrap-pc {
+    display: none;
+  }
+
+  #banner-mobile,
+  #main_content-mobile {
+    display: block;
+  }
+
+  #banner-mobile .image_banner {
+    width: 100%;
+    height: auto;
+    min-height: 159px;
+  }
+
+  #main_content-mobile .category-title {
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+  }
+
+  #main_content-mobile .category-title .ico {
+    background: url(/assets/home/ico_today.png) no-repeat;
+    background-size: 24px 24px;
+    display: inline-block;
+    width: 22px;
+    height: 27px;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+
+  .recently-read {
+    width: 100%;
+  }
+  .recently-read_item {
+    min-width: 120px;
+    width: 120px;
+    height: auto;
+  }
+
+  #main_content-mobile .history {
+    border: none;
+  }
+
+  #main_content-mobile .title_mobile {
+    width: 90%;
+    position: absolute;
+    bottom: 18%;
+    color: #fff;
+    font-size: 3.5vw;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.3em;
+    max-height: 2.6em;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  #main_content-mobile .recently-read_item_overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.84) 85%,
+      #000
+    );
+    border-radius: 3px;
+  }
+
+  #main_content-mobile .wrapper-text {
+    padding: 0 5px;
+  }
+
+  #main_content-mobile .wrapper-text .section_remai {
+    font-size: 10px;
+    right: 9px;
+    bottom: 10px;
+    font-weight: 500;
+  }
+
+  .today-comic {
+    margin-left: 2%;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .list-today-comic {
+    display: flex;
+    width: 100%;
+  }
+
+  .recently-read_item {
+    margin-right: 7px;
+    margin-bottom: 10px;
+  }
+
+  #main_content-mobile {
+    background: #0f1128;
+  }
+  .section_vipbanner {
+    position: relative;
+  }
+  .section_vipbanner .title_text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 0.8em;
+    left: 1.2em;
+  }
+  .section_vipbanner .sub_text {
+    color: #a3cefb;
+    font-size: 10px;
+    letter-spacing: -0.5px;
+    position: absolute;
+    top: 3.7em;
+    left: 2em;
+  }
+  .section_vipbanner .vip_btn {
+    position: absolute;
+    right: 1.5em;
+    top: 1.6em;
+    color: #fff;
+    padding: 0.3em;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

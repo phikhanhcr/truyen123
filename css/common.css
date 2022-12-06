@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+:root {
+  --white-color: #fff;
+  --primary-color: #0095f6;
+  --size-image-notification: 40px;
+  --header-height: 56px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+p {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1248px !important;
+}
+
+mark {
+  padding: 0;
+  color: #ee2d2f;
+  background-color: transparent;
+}

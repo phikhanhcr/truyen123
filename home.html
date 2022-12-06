@@ -16,26 +16,62 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="./css/banner/style.css">
-  <link rel="stylesheet" href="./css/banner/responsive.css">
+  <link rel="stylesheet" href="./css/header/style.css">
+  <link rel="stylesheet" href="./css/header/responsive.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/home/style.css">
+  <link rel="stylesheet" href="./css/home/responsive.css">
   <title>Document</title>
-  <style>
-    *{ 
-      box-sizing: border-box;
-    }
-    p {
-      margin-bottom: 0;
-    }
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-  </style>
 </head>
 
 <body>
+  <header id="header" class="align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="w-100 d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <div class="mr-4"><img src="/assets/header/logo.png" alt=""></div>
+            <ul class="d-flex list-unstyled list-menu">
+              <li class="active">Home</li>
+              <li><a href="#">Weekly</a></li>
+              <li><a href="#">Genres</a></li>
+              <li><a href="#">New</a></li>
+            </ul>
+          </div>
+          <div class="d-flex align-items-center right">
+            <img src="/assets/header/favorities.png" class="mr-1" alt="">
+            <img src="/assets/header/clock.png" alt="" class="mr-2">
+            <div class="mr-2 family-safe">
+              <p class="point-family-safe"></p>
+              <p>Family Safe</p>
+            </div>
+            <div class="wrapper-input-search">
+              <input class="input-search bg-dark" type="text" placeholder="Search comics/authors">
+              <img class="search-icon" src="/assets/header/ico_search.png" alt="">
+            </div>
+            <button class="login">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <header id="header-mobile" class="bg-dark align-items-center">
+
+    <div class="w-100">
+      <div class="d-flex justify-content-between align-items-center p-2">
+        <img src="/assets/header/menu.png" class="menu-icon" alt="">
+        <img src="/assets/header/logo-mobile.png" class="logo-mobile" alt="">
+        <img src="/assets/header/ico_search.png" alt="" class="search-icon">
+      </div>
+      <div></div>
+    </div>
+    <div class="overlay-login"></div>
+
+  </header>
+
   <div id="banner-pc">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -78,20 +114,426 @@
     </div>
   </div>
 
-
-  <div class="container">
-    <div class="row">
-      <div id="register-membership" class="mt-5" style="background-image: url(/assets/vipbanner.png)">
-        <a href="">
-          <div class="d-flex flex-column justify-content-center">
-            <p class="register-membership_title">Toomics VIP Membership</p>
-            <p class="register-membership_description">READ UNLIMITED COMICS. NEW EPISODES EVERY DAY.</p>
+  <!-- <div id="banner-mobile">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="wrapper-banner">
+            <a href="">
+              <img class="image_banner" src="/assets/image_banner.png" alt="">
+            </a>
           </div>
-          <p class="vip_btn">Get a VIP Membership</p>
-        </a>
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div> -->
 
-      <ul id="recently-read" class="w-100 mt-5">
+
+  <div id="main_content-pc">
+
+    <div class="container">
+      <div class="row">
+        <div id="register-membership" class="mt-5" style="background-image: url(/assets/vipbanner.png)">
+          <a href="">
+            <div class="d-flex flex-column justify-content-center">
+              <p class="register-membership_title">Toomics VIP Membership</p>
+              <p class="register-membership_description">READ UNLIMITED COMICS. NEW EPISODES EVERY DAY.</p>
+            </div>
+            <p class="vip_btn">Get a VIP Membership</p>
+          </a>
+        </div>
+
+        <div class="each_section_main section_today">
+
+          <h3 class="category-title">
+            <span class="ico"></span>
+            Today's Comics
+          </h3>
+
+          <div class="today-comic">
+            <p class="left_btn slick-arrow" style="display: block;"><span class="ico_left">left</span></p>
+            <ul class="recently-read" class="w-100 mt-1">
+              <li class="recently-read_item">
+                <div class="wrapper_thumbnail">
+                  <img src="/assets/thumbai.jpg" alt="">
+                </div>
+                <div class="recently-read_item_overlay"></div>
+                <div class="wrapper-text">
+                  <p class="title">Population Zero</p>
+                  <span class="line"></span>
+                  <span class="history">1 hour later</span>
+                  <p class="etc">
+                    <span class="type02">Romance</span>
+                    /
+                    <span class="type01">Drama</span>
+                  </p>
+                  <div>
+                    <span class="section_remai remai_read">1/45</span>
+                  </div>
+                </div>
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+            </ul>
+            <p class="right_btn slick-arrow" style="display: block;"><span class="ico_right">right</span></p>
+          </div>
+        </div>
+
+        <div class="each_section_main section_because">
+          <h3 class="category-title">
+            <span class="ico"></span>
+            Because you read <mark>Population Zero</mark>
+          </h3>
+
+          <div class="today-comic">
+            <p class="left_btn slick-arrow" style="display: block;"><span class="ico_left">left</span></p>
+            <ul class="recently-read" class="w-100 mt-1">
+              <li class="recently-read_item">
+                <div class="wrapper_thumbnail">
+                  <img src="/assets/thumbai.jpg" alt="">
+                </div>
+                <div class="recently-read_item_overlay"></div>
+                <div class="wrapper-text">
+                  <p class="title">Population Zero</p>
+                  <span class="line"></span>
+                  <span class="history">1 hour later</span>
+                  <p class="etc">
+                    <span class="type02">Romance</span>
+                    /
+                    <span class="type01">Drama</span>
+                  </p>
+                  <div>
+                    <span class="section_remai remai_read">1/45</span>
+                  </div>
+                </div>
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+            </ul>
+            <p class="right_btn slick-arrow" style="display: block;"><span class="ico_right">right</span></p>
+          </div>
+        </div>
+
+        <div class="each_section_main section_popular">
+
+          <h3 class="category-title">
+            <span class="ico"></span>
+            Popular Comics
+          </h3>
+
+          <div class="today-comic">
+            <p class="left_btn slick-arrow" style="display: block;"><span class="ico_left">left</span></p>
+            <ul class="recently-read" class="w-100 mt-1">
+              <li class="recently-read_item">
+                <div class="wrapper_thumbnail">
+                  <img src="/assets/thumbai.jpg" alt="">
+                </div>
+                <div class="recently-read_item_overlay"></div>
+                <div class="wrapper-text">
+                  <p class="title">Population Zero</p>
+                  <span class="line"></span>
+                  <span class="history">1 hour later</span>
+                  <p class="etc">
+                    <span class="type02">Romance</span>
+                    /
+                    <span class="type01">Drama</span>
+                  </p>
+                  <div>
+                    <span class="section_remai remai_read">1/45</span>
+                  </div>
+                </div>
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+            </ul>
+            <p class="right_btn slick-arrow" style="display: block;"><span class="ico_right">right</span></p>
+          </div>
+        </div>
+
+        <div class="each_section_main section_new_comic">
+
+          <h3 class="category-title">
+            <span class="ico"></span>
+            New comics
+          </h3>
+
+          <div class="today-comic">
+            <p class="left_btn slick-arrow" style="display: block;"><span class="ico_left">left</span></p>
+            <ul class="recently-read" class="w-100 mt-1">
+              <li class="recently-read_item">
+                <div class="wrapper_thumbnail">
+                  <img src="/assets/thumbai.jpg" alt="">
+                </div>
+                <div class="recently-read_item_overlay"></div>
+                <div class="wrapper-text">
+                  <p class="title">Population Zero</p>
+                  <span class="line"></span>
+                  <span class="history">1 hour later</span>
+                  <p class="etc">
+                    <span class="type02">Romance</span>
+                    /
+                    <span class="type01">Drama</span>
+                  </p>
+                  <div>
+                    <span class="section_remai remai_read">1/45</span>
+                  </div>
+                </div>
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+              <li class="recently-read_item">
+              </li>
+            </ul>
+            <p class="right_btn slick-arrow" style="display: block;"><span class="ico_right">right</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main_content-mobile" class="pt-3">
+
+    <p class="section_vipbanner mb-3">
+      <a href="/en/mypage/payment">
+          <img src="/assets/home/m_vipbanner.png" alt="" class="w-100">
+          <span class="title_text">Toomics VIP Membership</span>
+          <span class="sub_text">READ UNLIMITED COMICS. NEW EPISODES EVERY DAY.</span>
+          <span class="vip_btn">Start now</span>
+      </a>
+  </p>
+
+    <div class="each_section_main section_today">
+
+      <h3 class="category-title">
+        <span class="ico"></span>
+        Today's Comics
+      </h3>
+
+      <div class="today-comic">
+        <ul class="list-today-comic">
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="list-today-comic">
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+          <li class="recently-read_item">
+            <div class="wrapper_thumbnail">
+              <img src="/assets/thumbai.jpg" alt="">
+            </div>
+            <div class="recently-read_item_overlay"></div>
+            <div class="wrapper-text">
+              <p class="title_mobile">Population Zero ZeroZero</p>
+              <p class="etc">
+                <span class="type02">Romance</span>
+                /
+                <span class="type01">Drama</span>
+              </p>
+              <div>
+                <span class="section_remai">214</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section_recommended_wrap-pc">
+    <div class="container">
+      <h3 class="category-title">
+        <span class="ico"></span>
+        <mark>Recommended</mark>
+      </h3>
+      <ul class="recently-read" class="w-100 mt-1">
         <li class="recently-read_item">
           <div class="wrapper_thumbnail">
             <img src="/assets/thumbai.jpg" alt="">
@@ -112,18 +554,141 @@
           </div>
         </li>
         <li class="recently-read_item">
+          <div class="wrapper_thumbnail">
+            <img src="/assets/thumbai.jpg" alt="">
+          </div>
+          <div class="recently-read_item_overlay"></div>
+          <div class="wrapper-text">
+            <p class="title">Population Zero</p>
+            <span class="line"></span>
+            <span class="history">1 hour later</span>
+            <p class="etc">
+              <span class="type02">Romance</span>
+              /
+              <span class="type01">Drama</span>
+            </p>
+            <div>
+              <span class="section_remai remai_read">1/45</span>
+            </div>
+          </div>
         </li>
         <li class="recently-read_item">
+          <div class="wrapper_thumbnail">
+            <img src="/assets/thumbai.jpg" alt="">
+          </div>
+          <div class="recently-read_item_overlay"></div>
+          <div class="wrapper-text">
+            <p class="title">Population Zero</p>
+            <span class="line"></span>
+            <span class="history">1 hour later</span>
+            <p class="etc">
+              <span class="type02">Romance</span>
+              /
+              <span class="type01">Drama</span>
+            </p>
+            <div>
+              <span class="section_remai remai_read">1/45</span>
+            </div>
+          </div>
         </li>
         <li class="recently-read_item">
+          <div class="wrapper_thumbnail">
+            <img src="/assets/thumbai.jpg" alt="">
+          </div>
+          <div class="recently-read_item_overlay"></div>
+          <div class="wrapper-text">
+            <p class="title">Population Zero</p>
+            <span class="line"></span>
+            <span class="history">1 hour later</span>
+            <p class="etc">
+              <span class="type02">Romance</span>
+              /
+              <span class="type01">Drama</span>
+            </p>
+            <div>
+              <span class="section_remai remai_read">1/45</span>
+            </div>
+          </div>
         </li>
         <li class="recently-read_item">
+          <div class="wrapper_thumbnail">
+            <img src="/assets/thumbai.jpg" alt="">
+          </div>
+          <div class="recently-read_item_overlay"></div>
+          <div class="wrapper-text">
+            <p class="title">Population Zero</p>
+            <span class="line"></span>
+            <span class="history">1 hour later</span>
+            <p class="etc">
+              <span class="type02">Romance</span>
+              /
+              <span class="type01">Drama</span>
+            </p>
+            <div>
+              <span class="section_remai remai_read">1/45</span>
+            </div>
+          </div>
         </li>
         <li class="recently-read_item">
+          <div class="wrapper_thumbnail">
+            <img src="/assets/thumbai.jpg" alt="">
+          </div>
+          <div class="recently-read_item_overlay"></div>
+          <div class="wrapper-text">
+            <p class="title">Population Zero</p>
+            <span class="line"></span>
+            <span class="history">1 hour later</span>
+            <p class="etc">
+              <span class="type02">Romance</span>
+              /
+              <span class="type01">Drama</span>
+            </p>
+            <div>
+              <span class="section_remai remai_read">1/45</span>
+            </div>
+          </div>
+        </li>
+        <li class="recently-read_item">
+          <div class="wrapper_thumbnail">
+            <img src="/assets/thumbai.jpg" alt="">
+          </div>
+          <div class="recently-read_item_overlay"></div>
+          <div class="wrapper-text">
+            <p class="title">Population Zero</p>
+            <span class="line"></span>
+            <span class="history">1 hour later</span>
+            <p class="etc">
+              <span class="type02">Romance</span>
+              /
+              <span class="type01">Drama</span>
+            </p>
+            <div>
+              <span class="section_remai remai_read">1/45</span>
+            </div>
+          </div>
+        </li>
+        <li class="recently-read_item">
+          <div class="wrapper_thumbnail">
+            <img src="/assets/thumbai.jpg" alt="">
+          </div>
+          <div class="recently-read_item_overlay"></div>
+          <div class="wrapper-text">
+            <p class="title">Population Zero</p>
+            <span class="line"></span>
+            <span class="history">1 hour later</span>
+            <p class="etc">
+              <span class="type02">Romance</span>
+              /
+              <span class="type01">Drama</span>
+            </p>
+            <div>
+              <span class="section_remai remai_read">1/45</span>
+            </div>
+          </div>
         </li>
       </ul>
-
     </div>
+
   </div>
 </body>
 
