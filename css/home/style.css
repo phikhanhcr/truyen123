@@ -1,6 +1,20 @@
 #banner-pc {
 }
 
+
+.carousel-indicators {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+}
+
+.carousel-indicators li{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgba(146, 145, 145, 0.5);
+}
+
 #banner-pc .wrapper-banner {
   position: relative;
   height: 485px;
@@ -68,7 +82,7 @@
   margin-bottom: 20px;
 }
 
-.main_content-mobile {
+#main_content-mobile {
   display: none;
 }
 

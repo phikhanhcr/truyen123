@@ -1,0 +1,87 @@
+@media (max-width: 767px) {
+  #age_verification-pc {
+    display: none;
+  }
+
+  #age_verification-mobile {
+    display: block;
+    width: 100vw;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .section_ageverif .title {
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    font-size: 6vw;
+    line-height: 7vw;
+    font-weight: bold;
+    width: 80vw;
+    text-overflow: unset;
+    white-space: normal;
+  }
+
+  .age_info {
+    position: relative;
+    color: #f5dadb;
+    padding: 5% 8% 8% 8%;
+    font-size: 4vw;
+    border-bottom: 1px solid #5b5b5b;
+    background: #302f30;
+  }
+
+  .section_ageverif .btn_fixed {
+    position: fixed;
+    bottom: 0;
+    background: #3d3d3d;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold !important;
+  }
+  .section_ageverif .btn_fixed .button_no {
+    font-size: 18px;
+    border: 1px solid #5d5864;
+    border-radius: 0.3rem;
+    padding: 8px 0;
+    background: #3d3d3d;
+    width: 46%;
+    color: #fff;
+    margin: 3px;
+  }
+
+  .section_ageverif .btn_fixed .button_yes {
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 0.3rem;
+    padding: 8px 0;
+    background: #d30e09;
+    width: 46%;
+    color: #fff;
+    margin: 3px;
+  }
+
+  .section_ageverif .title .line {
+    clear: both;
+    display: block;
+    width: 14vw;
+    height: 0.8vw;
+    background: #fff;
+    margin-top: 3vw;
+  }
+
+  .age_info strong {
+    font-size: 6vw;
+    color: #fff;
+    font-weight: 700;
+  }
+}

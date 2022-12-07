@@ -7,6 +7,7 @@
 
   #banner-pc,
   #main_content-pc,
+  #main_content-mobile,
   .section_recommended_wrap-pc {
     display: none;
   }
@@ -124,21 +125,25 @@
     font-weight: bold;
     letter-spacing: -1px;
     position: absolute;
-    top: 0.8em;
+    top: 40%;
+    transform: translate(0, -50%);
     left: 1.2em;
+
   }
   .section_vipbanner .sub_text {
     color: #a3cefb;
     font-size: 10px;
     letter-spacing: -0.5px;
     position: absolute;
-    top: 3.7em;
+    top: 65%;
+    transform: translate(0, -50%);
     left: 2em;
   }
   .section_vipbanner .vip_btn {
     position: absolute;
     right: 1.5em;
-    top: 1.6em;
+    top: 50%;
+    transform: translate(0, -50%);
     color: #fff;
     padding: 0.3em;
     font-size: 13px;

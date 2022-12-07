@@ -62,18 +62,81 @@
 
     <div class="w-100">
       <div class="d-flex justify-content-between align-items-center p-2">
-        <img src="/assets/header/menu.png" class="menu-icon" alt="">
+        <label for="input_checkbox-login" class="mb-0">
+          <img src="/assets/header/menu.png" class="menu-icon" alt="">
+        </label>
         <img src="/assets/header/logo-mobile.png" class="logo-mobile" alt="">
         <img src="/assets/header/ico_search.png" alt="" class="search-icon">
       </div>
       <div></div>
     </div>
-    <div class="overlay-login"></div>
+
+
+    <input type="checkbox" hidden id="input_checkbox-login">
+    <label for="input_checkbox-login" class="mobile-overlay-login"></label>
+    <div class="header-mobile_login">
+      <div class="wrapper-header-mobile_login">
+        <div class="gnb-header">
+          <div class="gnb-header-1">
+            <img src="/assets/header/gnb-logo.png" class="mb-3" width="159" alt="toomics" class="gnb-logo">
+            <p>
+              <br>
+              Read a variety of awesome comics!
+            </p>
+            <div class="row">
+              <div class="header-mobile_login-button pl-3 pr-2">
+                <button type="button" class="btn btn-block btn-white-outlined"
+                  onclick="Base.popup('modal-login', 'login', '/en', 'N');" onkeypress="this.onclick" id="aside-menu">
+                  Sign in </button>
+              </div>
+              <div class="header-mobile_login-button pr-3">
+                <button type="button" class="btn btn-block btn-white-outlined"
+                  onclick="Base.popup('register', 'register', '/en', 'N');" onkeypress="this.onclick">
+                  Sign up </button>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-menu-close">
+            <label for="input_checkbox-login">
+              <span class="sr-only">Close menu</span>
+            </label>
+          </button>
+
+
+        </div>
+        <div class="gnb-body">
+          <ul>
+            <li>
+              <a href="javascript:;" onclick="Base.popup('modal-login', 'login', '/en/mypage/payment');"
+                onkeypress="this.onclick">
+                <i><img src="/assets/header/gnb-vip.png" alt="" width="20"></i>
+                <span class="text-red">
+                  VIP Membership </span>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="/en/help/notice_list" onkeypress="this.onclick">
+                <i><img src="/assets/header/gnb-help.png" alt="" width="20"></i>Customer Service </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
 
   </header>
 
   <div id="banner-pc">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="wrapper-banner" style="background-image: url(/assets/background_image.jpg);">
@@ -103,14 +166,6 @@
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 
@@ -333,12 +388,12 @@
 
     <p class="section_vipbanner mb-3">
       <a href="/en/mypage/payment">
-          <img src="/assets/home/m_vipbanner.png" alt="" class="w-100">
-          <span class="title_text">Toomics VIP Membership</span>
-          <span class="sub_text">READ UNLIMITED COMICS. NEW EPISODES EVERY DAY.</span>
-          <span class="vip_btn">Start now</span>
+        <img src="/assets/home/m_vipbanner.png" alt="" class="w-100">
+        <span class="title_text">Toomics VIP Membership</span>
+        <span class="sub_text">READ UNLIMITED COMICS. NEW EPISODES EVERY DAY.</span>
+        <span class="vip_btn">Start now</span>
       </a>
-  </p>
+    </p>
 
     <div class="each_section_main section_today">
 
