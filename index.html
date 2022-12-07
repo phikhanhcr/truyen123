@@ -17,23 +17,10 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
+
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
-  <style>
-    body {
-      font-family: "Noto Sans SC", "Noto Sans TC", "Noto Sans JP", "Noto Sans KR", Helvetica, Arial,
-        sans-serif;
-    }
 
-    ul,
-    p {
-      margin-bottom: 0;
-    }
-
-    ul {
-      padding-left: 0;
-    }
-  </style>
 </head>
 
 <body>
@@ -157,22 +144,23 @@
     document.getElementById('authentication').style.display = 'block'
     document.getElementById('overlay-login').style.display = 'block'
   })
-  
+
   document.getElementById('btn-close').addEventListener('click', () => {
 
     document.getElementById('authentication').classList.add('animation-hide')
 
-    
+
     document.getElementById('authentication').style.display = 'none'
     document.getElementById('overlay-login').style.display = 'none'
   })
 
   document.getElementById('overlay-login').addEventListener('click', () => {
- 
+
     document.getElementById('authentication').classList.add('animation-hide')
 
     document.getElementById('authentication').style.display = 'none'
     document.getElementById('overlay-login').style.display = 'none'
   })
 </script>
+
 </html>
